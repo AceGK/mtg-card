@@ -8,17 +8,17 @@ export default function Card({ card }) {
       <div className={styles.cardBody}>
         <header className={styles.header}>
           <div>
-          <h1 className={styles.title}>Lorem Ipsum</h1>
-          <div className={styles.mana}>mana</div>
+            <h1 className={styles.title}>Mugen</h1>
+            <div className={styles.mana}>mana</div>
           </div>
         </header>
         <div className={styles.image}>
           <img src="/images/mugen.jpg" alt="mugen art" width="auto" />
         </div>
         <header className={styles.type}>
-        <div>
-          <h2 className={styles.typeLine}>Creature — Cat</h2>
-          <div className={styles.set}>set</div>
+          <div>
+            <h2 className={styles.typeLine}>Creature — Cat</h2>
+            <div className={styles.set}>set</div>
           </div>
         </header>
         <div className={styles.body}>
@@ -36,7 +36,7 @@ export default function Card({ card }) {
           <div className={styles.stamp}></div>
           <header className={styles.stats}><div>0/0</div></header>
 
-          <div className={styles.details}>001/001 R  <br/>M24 EN AceGK</div>
+          <div className={styles.details}>001/001 R  <br />M24 EN AceGK</div>
           <div className={styles.copywrite}>™ & © 2024 Wizards of the Toast</div>
         </footer>
 
