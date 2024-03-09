@@ -3,24 +3,28 @@ import styles from "./Card.module.scss";
 
 export default function Card({ card }) {
   return (
-    <div className={styles.card}>
-      <div className={styles.frameBackground} />
-      <div className={styles.frame}>
-        <div className={styles.header}>
-          <div className={styles.title}>Lorem Ipsum</div>
+    <article className={styles.card}>
+      <div className={styles.background} />
+      <div className={styles.cardBody}>
+        <header className={styles.header}>
+          <div>
+          <h1 className={styles.title}>Lorem Ipsum</h1>
           <div className={styles.mana}>mana</div>
-        </div>
+          </div>
+        </header>
         <div className={styles.image}>
           <img src="/images/mugen.jpg" alt="mugen art" width="auto" />
         </div>
-        <div className={styles.type}>
-          <div className={styles.typeLine}>Creature — Cat</div>
+        <header className={styles.type}>
+        <div>
+          <h2 className={styles.typeLine}>Creature — Cat</h2>
           <div className={styles.set}>set</div>
-        </div>
-        <div className={styles.body}>
-          <div className={styles.description}>
-            When Mugen enters the battlefield, each player discards all the cards in their hand.
           </div>
+        </header>
+        <div className={styles.body}>
+          <p className={styles.description}>
+            When Mugen enters the battlefield, each player discards all the cards in their hand.
+          </p>
           <div className={styles.description}>
             Sacrafice a Food: Return Mugen to the top of its owner's library
           </div>
@@ -28,15 +32,15 @@ export default function Card({ card }) {
             The void consumes all
           </div>
         </div>
-        <div className={styles.footer}>
+        <footer className={styles.footer}>
           <div className={styles.stamp}></div>
-          <div className={styles.stats}>0/0</div>
+          <header className={styles.stats}><div>0/0</div></header>
 
           <div className={styles.details}>001/001 R  <br/>M24 EN AceGK</div>
           <div className={styles.copywrite}>™ & © 2024 Wizards of the Toast</div>
-        </div>
+        </footer>
 
       </div>
-    </div>
+    </article>
   );
 }

@@ -1,6 +1,7 @@
 // Define color variables
 $card: rgb(15, 14, 14);
-$frame-background: rgb(137, 137, 137);
+$background: rgb(104, 104, 104);
+$frame-background: rgb(71, 69, 69);
 $background-texture: rgba(232, 232, 232, 1);
 $text-color: rgb(35, 35, 35);
 $frame-header-bg-color: rgb(214, 214, 214);
@@ -15,17 +16,38 @@ $frame-header-bg-color: rgb(214, 214, 214);
   // overflow:hidden;
   position: relative;
   border-radius: 1.25em;
+
+  header {
+    padding: 3px;
+    background: $frame-background;
+    border-radius: 8px/20px;
+    // box-shadow: -2px 0 0 0 rgba(0, 0, 0, 0.8);
+    position: relative;
+    
+  }
+  header > div {
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 2px;
+    background: radial-gradient(ellipse farthest-corner, #e0e7ed 50%, #bdc6cd);
+    border: 2px solid #000;
+    border-radius: 10px/20px;
+    box-shadow: inset 2px -3px 0 #aaa, inset -1px 1px 0 #fff;
+    height: 42px;
+  }
 }
 
-.frameBackground {
-  background: $frame-background;
+.background {
+  background: $background;
   width: 100%;
   height: 92%;
   z-index: 1;
   border-radius: 5px 5px 80px 80px;
 }
 
-.frame {
+.cardBody {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -34,7 +56,7 @@ $frame-header-bg-color: rgb(214, 214, 214);
   z-index: 2;
   display: flex;
   flex-direction: column;
-
+  justify-content: space-between;
   padding: 1.5em;
   // background:blue;
 }
@@ -43,7 +65,7 @@ $frame-header-bg-color: rgb(214, 214, 214);
   background: $background-texture;
   width: 100%;
   height: 100%;
-  min-height: 150px;
+  min-height: 48%;
   img {
     width: 200px;
     display: none;
@@ -62,6 +84,7 @@ $frame-header-bg-color: rgb(214, 214, 214);
   margin: auto;
 }
 .body {
+  height:100%;
   background: $background-texture;
   display: flex;
   flex-direction: column;
@@ -69,27 +92,7 @@ $frame-header-bg-color: rgb(214, 214, 214);
   padding: 1rem;
 }
 
-.header,
-.type {
-  background: $background-texture;
-  display: flex;
-  justify-content: space-between;
-  padding: 8px 15px;
-  border-radius: 5% / 100%;
-  // z-index: 2;
-  // position: relative;
-}
 
-// borders
-.header,
-.type {
-  z-index: 1;
-  border: 0.3em solid rgb(65, 65, 65);
-  box-shadow: 0 -0.15em 0 -0.05em rgb(48, 67, 212),
-    // -0.2em 0 0.1em rgba(227, 2, 2, 0.533),
-    0.1em 0 0.05em #0006,
-    inset 0 0 0 0.1em rgba(0, 0, 0, 0.729), inset 0.3em -0.3em 0.1em #0003;
-}
 .body,
 .image {
   border: 0.3em solid rgb(65, 65, 65);
@@ -109,16 +112,15 @@ $frame-header-bg-color: rgb(214, 214, 214);
   align-items: flex-end;
   justify-content: space-between;
   color: white;
-  padding-top: 1em;
+  padding-top: 2em;
   font-size: 0.625em;
 }
 
 .stats {
   background: white;
   color: black;
-  // border-radius:50%;
   font-size: 1.5em;
-  position: absolute;
+  position: absolute!important;
   top: -20px;
   right: 2px;
   width: fit-content;
@@ -126,6 +128,9 @@ $frame-header-bg-color: rgb(214, 214, 214);
   padding: 0.5rem 1rem;
   display: flex;
   border-radius: 30% / 100%;
+  & > div {
+    height: 33px!important;
+  }
 }
 
 .stamp {
@@ -138,13 +143,11 @@ $frame-header-bg-color: rgb(214, 214, 214);
   width: 50px;
   height: 25px;
 
-  
-    flex-basis: 41px;
-    height: 21px;
+  flex-basis: 41px;
+  height: 21px;
 
-
-    z-index: 2;
-    background: lightgray;
-    background-image: url(https://image.ibb.co/jyq34n/holofoil_texture_2.jpg);
-    box-shadow: 0 0 0 4px #171314;
+  z-index: 2;
+  background: lightgray;
+  background-image: url(https://image.ibb.co/jyq34n/holofoil_texture_2.jpg);
+  box-shadow: 0 0 0 4px #171314;
 }
