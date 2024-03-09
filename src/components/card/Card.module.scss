@@ -72,7 +72,7 @@ $text-color: rgb(35, 35, 35);
 
 .image {
   background: $background-texture;
-  width: 100%;
+  // width: 96%;
   height: 100%;
   min-height: 48%;
   img {
@@ -119,11 +119,13 @@ $text-color: rgb(35, 35, 35);
 
 .body,
 .image {
-  max-width: 97%;
+  max-width: 96%;
   margin: auto;
 }
+
 .body {
   height: 100%;
+  width: 100%;
   background: $background-texture;
   display: flex;
   flex-direction: column;
