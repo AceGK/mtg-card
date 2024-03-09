@@ -9,16 +9,16 @@ export default function Card({ card }) {
         <header className={styles.header}>
           <div>
             <h1 className={styles.title}>Mugen</h1>
-            <div className={styles.mana}>mana</div>
+            <div className={styles.mana}>mana icons</div>
           </div>
         </header>
         <div className={styles.image}>
-          <img src="/images/mugen.jpg" alt="mugen art" width="auto" />
+          <img src="/images/texture.jpg" alt="card artwork" width="auto" />
         </div>
         <header className={styles.type}>
           <div>
             <h2 className={styles.typeLine}>Creature — Cat</h2>
-            <div className={styles.set}>set</div>
+            <div className={styles.set}>set icon</div>
           </div>
         </header>
         <div className={styles.body}>
