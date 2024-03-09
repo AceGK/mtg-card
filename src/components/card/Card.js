@@ -35,10 +35,10 @@ export default function Card({ card }) {
         </header>
         <div className={styles.body}>
           <p className={styles.description}>
-            When Mugen enters the battlefield, each player discards all the cards in their hand.
+            When Mugen enters the battlefield, each player  <br/> discards all the cards in their hand.
           </p>
           <p className={styles.description}>
-            Sacrafice a Food: Return Mugen to the top of its owner&apos;s library
+            Sacrafice a Food: Return Mugen to the top of <br/> its owner&apos;s library
           </p>
           <div className={styles.flavorText}>
             The void consumes all
