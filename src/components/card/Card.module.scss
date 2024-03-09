@@ -96,13 +96,12 @@ $text-color: rgb(35, 35, 35);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    // width: 100%;
     height: 50px;
     // padding:20px;
     position: relative;
     svg {
-      width: 100%;
-      max-width:50px;
+      max-width:60px;
       height: 100%;
       // padding: 3px;
       background: -webkit-linear-gradient(#ff0000, #4105f4);
@@ -118,7 +117,9 @@ $text-color: rgb(35, 35, 35);
 .type {
   margin-top: -4px !important;
 }
-
+.typeLine{
+  width:100%;
+}
 .body,
 .image {
   max-width: 96%;
