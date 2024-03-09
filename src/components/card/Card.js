@@ -2,11 +2,12 @@ import styles from "./Card.module.scss";
 // https://mana.andrewgioia.com/icons.html
 import localFont from 'next/font/local'
 
-const mplantin = localFont({ src: "../../../public/fonts/mplantin.woff" })
+const plantin = localFont({ src: "../../../public/fonts/mplantin.woff" })
 
 export default function Card({ card }) {
   return (
-    <article className={`${styles.card} ${mplantin.className}`}>
+    <article className={`${styles.card} ${plantin.className}`}>
+
       <div className={styles.background} />
       <div className={styles.cardBody}>
         <header className={styles.header}>
@@ -29,7 +30,7 @@ export default function Card({ card }) {
             When Mugen enters the battlefield, each player discards all the cards in their hand.
           </p>
           <div className={styles.description}>
-            Sacrafice a Food: Return Mugen to the top of its owner's library
+            Sacrafice a Food: Return Mugen to the top of its owner&apos;s library
           </div>
           <div className={styles.flavorText}>
             The void consumes all
