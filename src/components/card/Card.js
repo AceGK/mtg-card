@@ -2,16 +2,16 @@ import styles from "./Card.module.scss";
 // https://mana.andrewgioia.com/icons.html
 import localFont from 'next/font/local'
 
-const myFont = localFont({ src: '../public/fonts/mplantin.woff' })
+const mplantin = localFont({ src: "../../../public/fonts/mplantin.woff" })
 
 export default function Card({ card }) {
   return (
-    <article className={styles.card}>
+    <article className={`${styles.card} ${mplantin.className}`}>
       <div className={styles.background} />
       <div className={styles.cardBody}>
         <header className={styles.header}>
           <div>
-            <h1 className={`${styles.title} ${myFont.className}`} >Mugen</h1>
+            <h1 className={styles.title}>Mugen</h1>
             <div className={styles.mana}>mana icons</div>
           </div>
         </header>
