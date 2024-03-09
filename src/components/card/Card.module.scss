@@ -31,11 +31,13 @@ $frame-header-bg-color: rgb(214, 214, 214);
     align-items: center;
     justify-content: space-between;
     padding: 0px 10px 2px;
-    background: radial-gradient(ellipse farthest-corner, #e0e7ed 50%, #bdc6cd);
     border: 2px solid #000;
     border-radius: 10px/20px;
     box-shadow: inset 2px -3px 0 #aaa, inset -1px 1px 0 #fff;
     height: 42px;
+    background: 
+    linear-gradient( 0deg, rgba(201, 216, 201, .3), rgba(201, 216, 209, .3) ), 
+    url(https://image.ibb.co/jKByZn/tile_bg_1.jpg); 
   }
 }
 
@@ -92,6 +94,12 @@ $frame-header-bg-color: rgb(214, 214, 214);
   padding: 1rem;
 }
 
+.body {
+  background: 
+//  linear-gradient( 0deg, rgba(6, 6, 6, 0.12), rgba(202, 202, 202, 0.3) ), 
+ url(https://image.ibb.co/jKByZn/tile_bg_1.jpg); 
+ background-size: 100%;
+}
 
 .body,
 .image {
