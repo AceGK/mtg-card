@@ -2,7 +2,7 @@ import styles from "./Card.module.scss";
 // https://mana.andrewgioia.com/icons.html
 import localFont from 'next/font/local'
 import B from "../../../public/icons/b.svg"
-import M10 from "../../../public/icons/m-10-b.svg"
+import M10 from "../../../public/icons/m-10-g.svg"
 
 const mplantin = localFont({ src: "../../../public/fonts/mplantin.woff" })
 
