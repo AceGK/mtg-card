@@ -4,11 +4,11 @@ import localFont from 'next/font/local'
 import B from "../../../public/icons/b.svg"
 import M10 from "../../../public/icons/m-10-s.svg"
 
-const plantin = localFont({ src: "../../../public/fonts/mplantin.woff" })
+const mplantin = localFont({ src: "../../../public/fonts/mplantin.woff" })
 
 export default function Card({ card }) {
   return (
-    <article className={`${styles.card} ${plantin.className}`}>
+    <article className={`${styles.card} ${mplantin.className}`}>
 
       <div className={styles.background} />
       <div className={styles.cardBody}>
@@ -51,8 +51,8 @@ export default function Card({ card }) {
           </div>
           <header className={styles.stats}><div>0/0</div></header>
 
-          <div className={styles.details}>001/001 R  <br />M24 EN AceGK</div>
-          <div className={styles.copywrite}>™ & © 2024 Wizards of the Toast</div>
+          <div className={styles.details}>1/1 R  <br />M24 EN AceGK</div>
+          <div className={styles.copywrite}>™ & © 2010 Wizards of the Toast</div>
         </footer>
 
       </div>
