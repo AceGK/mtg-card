@@ -6,6 +6,19 @@ import M10 from "../../../public/icons/m-10-g.svg"
 
 const mplantin = localFont({ src: "../../../public/fonts/mplantin.woff" })
 
+const card = {
+  title: "Mugen",
+  mana: "B",
+  image: "/images/mugen.jpg",
+  type: "Creature — Cat",
+  set: "M10",
+  description: "When Mugen enters the battlefield, each player discards all the cards in their hand. Sacrafice a Food: Return Mugen to the top of its owner's library",
+  flavorText: "The void consumes all",
+  stats: "0/0",
+  details: "1/1 R M24 EN AceGK",
+  copywrite: "™ & © 2010 Wizards of the Toast",
+};
+
 export default function Card({ card }) {
   return (
     <article className={`${styles.card} ${mplantin.className}`}>
@@ -28,9 +41,9 @@ export default function Card({ card }) {
             <h2 className={styles.typeLine}>Creature — Cat</h2>
             <div className={styles.set}>
               <div>
-              <M10 />
+                <M10 />
               </div>
-              </div>
+            </div>
           </div>
         </header>
         <div className={styles.body}>
