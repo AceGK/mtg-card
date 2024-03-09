@@ -2,7 +2,7 @@ import styles from "./Card.module.scss";
 // https://mana.andrewgioia.com/icons.html
 import localFont from 'next/font/local'
 import B from "../../../public/icons/b.svg"
-import M10 from "../../../public/icons/m-10-s.svg"
+import M10 from "../../../public/icons/m-10-b.svg"
 
 const mplantin = localFont({ src: "../../../public/fonts/mplantin.woff" })
 
@@ -21,7 +21,7 @@ export default function Card({ card }) {
           </div>
         </header>
         <div className={styles.image}>
-          <img src="/images/texture.jpg" alt="card artwork" width="auto" />
+          <img src="/images/mugen.jpg" alt="card artwork" width="auto" />
         </div>
         <header className={styles.type}>
           <div>
