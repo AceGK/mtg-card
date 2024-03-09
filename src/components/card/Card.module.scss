@@ -6,7 +6,7 @@ $background-texture: #bdb6af;
 $text-color: rgb(35, 35, 35);
 
 .card {
-  font-family: 'Plantin', sans-serif;
+  font-family: "Plantin", sans-serif;
   width: 500px;
   height: 700px;
   background: $card;
@@ -22,11 +22,11 @@ $text-color: rgb(35, 35, 35);
     border-radius: 8px/20px;
     // box-shadow: -2px 0 0 0 rgba(0, 0, 0, 0.8);
     position: relative;
-    font-weight:600;
+    font-weight: 600;
   }
   header > div {
     position: relative;
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 10px 2px;
@@ -34,18 +34,21 @@ $text-color: rgb(35, 35, 35);
     border-radius: 10px/20px;
     box-shadow: inset 2px -3px 0 #aaa, inset -1px 1px 0 #fff;
     height: 42px;
-    // background: 
-    // linear-gradient( 0deg, rgba(201, 216, 201, .3), rgba(201, 216, 209, .3) ), 
-    // url(https://image.ibb.co/jKByZn/tile_bg_1.jpg); 
-    background:#bdb6af;
+    // background:
+    // linear-gradient( 0deg, rgba(201, 216, 201, .3), rgba(201, 216, 209, .3) ),
+    // url(https://image.ibb.co/jKByZn/tile_bg_1.jpg);
+    background: #bdb6af;
+  }
+  p {
+    padding-bottom: 1rem;
   }
 }
 
 .background {
   background: 
-  // linear-gradient( 0deg, rgba(58, 58, 58, 0.3), rgba(56, 68, 59, 0.546) ),
-  url('/images/black-marble.jpg');
-  background-size:100%;
+  // linear-gradient( 0deg, rgba(64, 62, 55, 0.191), rgba(65, 53, 45, 0.347) ),
+    url("/images/black-marble.jpg");
+  background-size: 100%;
   width: 100%;
   height: 92%;
   z-index: 1;
@@ -75,16 +78,36 @@ $text-color: rgb(35, 35, 35);
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border:2px solid black;
+    border: 2px solid black;
     // display: none;
   }
 }
 
 .title {
-  font-size:1.25rem;
+  font-size: 1.25rem;
 }
 .type {
-  font-size:1.125rem;
+  font-size: 1.125rem;
+}
+.set {
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    // padding:20px;
+    position: relative;
+    svg {
+      width: 100%;
+      height: 100%;
+      // padding: 3px;
+      background: -webkit-linear-gradient(#ff0000, #4105f4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      z-index: 1;
+    }
+  }
 }
 
 .body,
@@ -99,13 +122,13 @@ $text-color: rgb(35, 35, 35);
   margin: auto;
 }
 .body {
-  height:100%;
+  height: 100%;
   background: $background-texture;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
-  font-size:1.125rem;
+  font-size: 1.125rem;
 }
 
 .body,
@@ -117,7 +140,7 @@ $text-color: rgb(35, 35, 35);
 
 .flavorText {
   border-top: 1px solid rgba(0, 0, 0, 0.161);
-  padding: 0.5em 0;
+  padding-top: 1em;
   font-style: italic;
 }
 
@@ -135,7 +158,7 @@ $text-color: rgb(35, 35, 35);
   background: white;
   color: black;
   font-size: 1.5em;
-  position: absolute!important;
+  position: absolute !important;
   top: -20px;
   right: 2px;
   width: fit-content;
@@ -144,7 +167,7 @@ $text-color: rgb(35, 35, 35);
   display: flex;
   border-radius: 30% / 100%;
   & > div {
-    height: 33px!important;
+    height: 33px !important;
   }
 }
 
@@ -154,28 +177,48 @@ $text-color: rgb(35, 35, 35);
   top: -19px;
   left: 50%;
   transform: translateX(-50%);
-  width: 70px;
-  height: 40px;
+  width: 65px;
+  height: 35px;
   flex-basis: 41px;
   z-index: 2;
   box-shadow: 0 0 0 4px $frame-background;
-  border:6px solid $card;
+  border: 6px solid $card;
   .stamp {
     // border:3px solid red;
-    background-image: url('/images/mtg-holofoil.png');
-    background-size:100%;
+    background-image: url("/images/mtg-holofoil.png");
+    background-size: 100%;
     height: 100%;
     width: 100%;
     border-radius: 50%;
     z-index: 2;
   }
   .borderHide {
-    background:$card;
-    position:absolute;
-    height:30px;
+    background: $card;
+    position: absolute;
+    height: 30px;
     width: 100px;
-    top:13px;
-    left:-50%;
+    top: 13px;
+    left: -50%;
     z-index: -1;
+  }
+}
+
+.mana {
+  div {
+    background-color: #beb9b2;
+    border-radius: 1em;
+    color: #111;
+    font-size: 0.95em;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    box-shadow: -0.06em 0.07em 0 #111, 0 0.06em 0 #111;
+    // padding:20px;
+    svg {
+      width: 100%;
+      height: 100%;
+      padding: 3px;
+      color: rgb(19, 19, 19);
+    }
   }
 }
