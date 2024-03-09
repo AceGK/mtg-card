@@ -33,7 +33,7 @@ export default function Card({ card }) {
           </div>
         </div>
         <footer className={styles.footer}>
-          <div className={styles.stamp}></div>
+          <div className={styles.holofoil}></div>
           <header className={styles.stats}><div>0/0</div></header>
 
           <div className={styles.details}>001/001 R  <br />M24 EN AceGK</div>

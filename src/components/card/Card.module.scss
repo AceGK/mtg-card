@@ -133,7 +133,7 @@ $frame-header-bg-color: rgb(214, 214, 214);
   }
 }
 
-.stamp {
+.holofoil {
   background: white;
   border-radius: 50%;
   position: absolute;
@@ -148,6 +148,7 @@ $frame-header-bg-color: rgb(214, 214, 214);
 
   z-index: 2;
   background: lightgray;
-  background-image: url(https://image.ibb.co/jyq34n/holofoil_texture_2.jpg);
+  background-image: url('/images/mtg-holofoil.png');
+  background-size:100%;
   box-shadow: 0 0 0 4px #171314;
 }
