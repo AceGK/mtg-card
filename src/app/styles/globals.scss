@@ -1,7 +1,12 @@
 body {
   background:rgb(24, 24, 30);
 }
-
+@font-face {
+  font-family: 'Platin';
+  src: url('/fonts/mplantin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 main {
   display: flex;
   flex-wrap: wrap;

@@ -5,8 +5,15 @@ $frame-background: #38362f;
 $background-texture: #bdb6af;
 $text-color: rgb(35, 35, 35);
 
+@font-face {
+  font-family: 'Plantin';
+  src: url('/public/fonts/mplantin.ttf') format('truetype');
+  // font-weight: 400;
+  font-style: normal;
+}
 
 .card {
+  font-family: 'Plantin', sans-serif;
   width: 500px;
   height: 700px;
   background: $card;
